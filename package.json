@@ -1,0 +1,15 @@
+{
+  "bin": {
+    "decrypt": "./decrypt-message.js",
+    "encrypt": "./encrypt-message.js"
+  },
+  "name": "sooper-secret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buffs-and-bytes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
