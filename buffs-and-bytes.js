@@ -1,9 +1,12 @@
+const fs = require('fs');
+
 var russell = "Russell";
 
 var buf1 = Buffer.from(russell);
 var uia1 = new Uint8Array(buf1);
 console.log(buf1);
 console.log(buf1.toString());
+console.log(buf1.toString('ascii'));
 console.log(buf1.toString('base64'));
 console.log(uia1);
 console.log();
@@ -26,3 +29,4 @@ console.log("base64 string: ", buf3.toString('base64'));
 console.log("utf string: ", buf3.toString());
 console.log();
 
+fs.writeFileSync(`test-file.txt`, Buffer.from(russell).toString('hex'));
